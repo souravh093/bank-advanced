@@ -4,13 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BaparBankRecape</title>
+    <title>BaparBankRecap</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header>
         <h1 class="text-5xl text-center mt-10">Functional <span class="text-blue-500 font-semibold">Baap Er Bank</span></h1>
     </header>
-    <script src="js/custom.js"></script>
+    <main class="bg-slate-50">
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 max-w-6xl mx-auto text-white">
+                <div class="bg-yellow-400 p-8 rounded-lg">
+                    <h4 class="text-3xl">Deposit</h4>
+                    <h4 class="text-5xl">$<span id="deposit">0</span></h4>
+                </div>
+                <div class="bg-violet-400 p-8 rounded-lg">
+                    <h4 class="text-3xl">Withdraw</h4>
+                    <h4 class="text-5xl">$<span id="withdarw">0</span></h4>
+                </div>
+                <div class="bg-blue-400 p-8 rounded-lg">
+                    <h4 class="text-3xl">Balance</h4>
+                    <h4 class="text-5xl">$<span id="availableBalance">1240</span></h4>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 max-w-6xl mx-auto mt-10 text-white gap-4">
+                <div class="bg-indigo-400 p-8 rounded-lg">
+                    <h4 class="text-3xl">Please Deposit</h4>
+                    <input class="text-black block w-full px-3 py-2 rounded-lg my-4 outline-none" placeholder="Amount you want to deposit" type="number" id="depositInput">
+                    <button class="bg-blue-800 px-4 py-2 text-xl rounded-lg" id="depositBtn">Deposit</button>
+                </div>
+                <div class="bg-green-400 p-8 rounded-lg">
+                    <h4 class="text-3xl">Please Withdraw</h4>
+                    <input class="text-black block w-full px-3 py-2 rounded-lg my-4 outline-none" placeholder="Amount you want to withdraw" type="number" id="withdrawInput">
+                    <button class="bg-blue-800 px-4 py-2 text-xl rounded-lg" id="withdrawBtn">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/deposit.js"></script>
 </body>
 </html>
